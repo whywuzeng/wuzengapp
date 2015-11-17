@@ -61,6 +61,10 @@ public class ImageAdapter extends BaseAdapter {
 		loader=ImageLoader.getInstance();
 		this.context=context;
 		this.gallery_list=gallery_list;
+//		for(){
+//		Galleryad galleryad=new Galleryad(rowId, imgUrl, flag, houdongId);
+//		}
+//		gallery_list.add()
 	}
 
 	@Override
@@ -80,7 +84,7 @@ public class ImageAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(final int position, View convertView, ViewGroup parent) {
-//		ViewHolder viewHolder=null;
+		ViewHolder viewHolder=null;
 		
 		if (convertView == null) {
 //			viewHolder=new ViewHolder();
@@ -90,13 +94,13 @@ public class ImageAdapter extends BaseAdapter {
 //			convertView =imageView;
 //			viewHolder.imageView=(ImageView)convertView;
 //			convertView.setTag(viewHolder);
-//			
+			
 			convertView = mInflater.inflate(R.layout.image_item, null);
-//			}else
-				
-//			{
-//				viewHolder=(ViewHolder)convertView.getTag();
+		
 			}
+//			else{
+//				viewHolder=(ViewHolder)convertView.getTag();
+//			}
 			
 //		Galleryad galleryad = gallery_list.get(position%gallery_list.size());
 //		loader.displayImage(galleryad.getImgUrl(), viewHolder.imageView, options);

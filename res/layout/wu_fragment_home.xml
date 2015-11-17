@@ -22,6 +22,20 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <com.wuzeng.ui.ScrollLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/home_mscrolllay"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@color/black" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="29sp" />
+            </com.wuzeng.ui.ScrollLayout>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp" >
@@ -35,16 +49,15 @@
 
                 <com.wuzeng.wight.viewflow.CircleFlowIndicator
                     android:id="@+id/viewflowindic"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
                     android:layout_gravity="center_horizontal"
                     android:padding="10dip"
                     app:fadeOut="1000"
                     app:inactiveType="fill" />
             </RelativeLayout>
-            
         </LinearLayout>
     </com.wuzeng.wight.pulltorefresh.PullToRefreshScrollView>
 

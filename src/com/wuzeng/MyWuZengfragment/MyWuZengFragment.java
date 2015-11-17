@@ -27,10 +27,10 @@ public class MyWuZengFragment extends Fragment {
 			view=inflater.inflate(R.layout.wu_fragment_mywuzeng, container,false);
 		}
 		
-		   ViewGroup p = (ViewGroup) view.getParent(); 
-	        if (p != null) { 
-	            p.removeAllViewsInLayout(); 
-	        }
+//		   ViewGroup p = (ViewGroup) view.getParent(); 
+//	        if (p != null) { 
+//	            p.removeAllViewsInLayout(); 
+//	        }
 		
 		return view;
 	}

@@ -26,10 +26,10 @@ public class HouseKeeperFragment extends Fragment {
 		if(view==null){
 			view=inflater.inflate(R.layout.wu_fragment_housekeeper, container,false);
 		}
-		   ViewGroup p = (ViewGroup) view.getParent(); 
-	        if (p != null) { 
-	            p.removeAllViewsInLayout(); 
-	        }
+//		   ViewGroup p = (ViewGroup) view.getParent(); 
+//	        if (p != null) { 
+//	            p.removeAllViewsInLayout(); 
+//	        }
 		
 		return view;
 	}

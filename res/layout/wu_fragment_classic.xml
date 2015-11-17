@@ -4,45 +4,48 @@
     android:layout_height="match_parent"
     android:background="@color/fragment_home_bg"
     android:orientation="vertical" >
-
-    <include
-        android:layout_width="match_parent"
+    
+    <include android:layout_width="match_parent"
         android:layout_height="@dimen/actionbar_height"
-        layout="@layout/actionbar_home" />
-
-    <TextView
+        layout="@layout/actionbar_home"/>
+    
+       <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="2" />
 
-    <LinearLayout
+        <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
 
         <com.wuzeng.ui.AnimationSildingLayout
-            android:id="@+id/mAnimationSildingLayout"
+            android:id="@+id/m_animationsild"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
             <ListView
                 android:id="@+id/left_listview"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_width="fill_parent"
+                  android:divider="@null"
+                        android:dividerHeight="0dp"
+                android:layout_height="fill_parent" >
             </ListView>
 
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:visibility="invisible"
                 android:paddingLeft="80dp" >
 
                 <ListView
                     android:id="@+id/rightCategoryList"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" >
-                    
+                    android:layout_width="fill_parent"
+                   	android:visibility="visible"
+                    android:layout_height="fill_parent" >
                 </ListView>
-                      <ImageView
+                
+                   <ImageView
                             android:id="@+id/img_arrow"
                             android:layout_width="wrap_content"
                             android:layout_height="60dip"
@@ -54,5 +57,4 @@
             </FrameLayout>
         </com.wuzeng.ui.AnimationSildingLayout>
     </LinearLayout>
-
 </LinearLayout>

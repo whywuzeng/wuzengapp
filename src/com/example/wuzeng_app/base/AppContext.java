@@ -26,13 +26,17 @@ public class AppContext extends Application {
 		
 	}
 	
-	private static void OpenDb(){
+	public static void OpenDb(){
 		if(!db.isOpen()){
 			mDbHelper.onOpen(db);
 		}
 	}
 	
-	private static void closeDb(){
+	public static SQLiteDatabase  getDB(){
+		return db;
+	}
+	
+	public static void closeDb(){
 		
 		db.close();
 	}

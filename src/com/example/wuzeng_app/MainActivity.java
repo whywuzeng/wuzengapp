@@ -256,6 +256,9 @@ public class MainActivity extends FragmentActivity {
 //				 forView = mClassicFragment.getForView();
 //					removeview(forView); 
 				mainPager.setCurrentItem(Classicindex);
+				mClassicFragment.backToCategory();
+				mClassicFragment.backToOrigin();
+				
 				break;
 			case R.id.third_page_item:
 //				 forView = mShoppingFragment.getForView();

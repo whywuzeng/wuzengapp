@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <solid android:color="#ffffff"/>
+    <stroke android:width="1px"
+        android:color="#ffffff"/>
+    <corners android:radius="5dp"/>
+</shape>
+
+
+<!-- solid       填充。
+stroke    描边。
+corners   圆角。
+padding   定义内容离边界的距离。  -->

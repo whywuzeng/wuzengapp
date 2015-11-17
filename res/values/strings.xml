@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">wuzeng_app</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="first_page_tv">房子</string>
+     <string name="second_page_tv">车子</string>
+      <string name="thrid_page_tv">妹子</string>
+       <string name="focese_page_tv">票子</string>
+        <string name="five_page_tv">控股</string>
+
+</resources>

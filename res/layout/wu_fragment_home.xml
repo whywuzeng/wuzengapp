@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.wuzeng_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_home_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        layout="@layout/actionbar_home" />
+
+    <com.wuzeng.wight.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/home_body_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp" >
+
+                <com.wuzeng.wight.viewflow.ViewFlow
+                    android:id="@+id/viewflow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    app:sidebuffer="3" >
+                </com.wuzeng.wight.viewflow.ViewFlow>
+
+                <com.wuzeng.wight.viewflow.CircleFlowIndicator
+                    android:id="@+id/viewflowindic"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dip"
+                    app:fadeOut="1000"
+                    app:inactiveType="fill" />
+            </RelativeLayout>
+            
+        </LinearLayout>
+    </com.wuzeng.wight.pulltorefresh.PullToRefreshScrollView>
+
+</LinearLayout>

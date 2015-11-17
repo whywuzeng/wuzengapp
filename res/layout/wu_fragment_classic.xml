@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_home_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        layout="@layout/actionbar_home" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.wuzeng.ui.AnimationSildingLayout
+            android:id="@+id/mAnimationSildingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/left_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="80dp" >
+
+                <ListView
+                    android:id="@+id/rightCategoryList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    
+                </ListView>
+                      <ImageView
+                            android:id="@+id/img_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dip"
+                            android:layout_marginLeft="4dp"
+                            android:nextFocusLeft="@+id/rightCategoryList"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/icon_zhixiang" >
+                        </ImageView>
+            </FrameLayout>
+        </com.wuzeng.ui.AnimationSildingLayout>
+    </LinearLayout>
+
+</LinearLayout>

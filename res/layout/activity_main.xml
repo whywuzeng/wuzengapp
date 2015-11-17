@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.wuzeng.ui.MViewPager
+        android:id="@+id/Mview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/midline_line" >
+    </com.wuzeng.ui.MViewPager>
+
+    <View
+        android:id="@+id/midline_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/tab_lay"
+        android:background="@color/window_bg" />
+
+    <include
+        android:id="@+id/tab_lay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/tab_layout_wz" />
+
+</RelativeLayout>

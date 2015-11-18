@@ -15,8 +15,8 @@ public final class R {
         public static final int slide_out_to_top=0x7f040003;
     }
     public static final class array {
-        public static final int show_search_option=0x7f050001;
-        public static final int update_user_icon=0x7f050000;
+        public static final int show_search_option=0x7f060001;
+        public static final int update_user_icon=0x7f060000;
     }
     public static final class attr {
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
@@ -588,342 +588,342 @@ containing a value of this type.
         public static final int verticalSpacing=0x7f01001c;
     }
     public static final class color {
-        public static final int EE=0x7f06006c;
-        public static final int add_troop_member_bg=0x7f060099;
+        public static final int EE=0x7f07006c;
+        public static final int add_troop_member_bg=0x7f070099;
         /**  公用背景颜色 
          */
-        public static final int background_color=0x7f060003;
-        public static final int bg_color=0x7f060029;
-        public static final int black=0x7f06001f;
+        public static final int background_color=0x7f070003;
+        public static final int bg_color=0x7f070029;
+        public static final int black=0x7f07001f;
         /**  蓝色 
          */
-        public static final int blue=0x7f060010;
+        public static final int blue=0x7f070010;
         /**  白色 
          */
-        public static final int blue1=0x7f06001d;
-        public static final int blue2=0x7f060013;
-        public static final int blue3=0x7f060011;
-        public static final int blue4=0x7f060026;
-        public static final int blue5=0x7f060049;
-        public static final int blue8=0x7f06004b;
-        public static final int blue_color=0x7f060024;
-        public static final int bluesky=0x7f060012;
+        public static final int blue1=0x7f07001d;
+        public static final int blue2=0x7f070013;
+        public static final int blue3=0x7f070011;
+        public static final int blue4=0x7f070026;
+        public static final int blue5=0x7f070049;
+        public static final int blue8=0x7f07004b;
+        public static final int blue_color=0x7f070024;
+        public static final int bluesky=0x7f070012;
         /**  <color name="gray">#FF888888</color> 
          */
-        public static final int brandbg=0x7f060061;
-        public static final int button_reply_normal=0x7f0600b8;
-        public static final int button_reply_pressed=0x7f0600b9;
-        public static final int button_unselected=0x7f06007b;
-        public static final int cardchildname=0x7f060064;
+        public static final int brandbg=0x7f070061;
+        public static final int button_reply_normal=0x7f0700b8;
+        public static final int button_reply_pressed=0x7f0700b9;
+        public static final int button_unselected=0x7f07007b;
+        public static final int cardchildname=0x7f070064;
         /**  <color name="transparent">@color/color_hei_8</color> 
          */
-        public static final int chat_background=0x7f06007c;
-        public static final int chat_history_time_text=0x7f060083;
-        public static final int chat_text=0x7f060081;
-        public static final int chat_time=0x7f060082;
-        public static final int chat_title_name=0x7f06007d;
-        public static final int class_listitemcolor=0x7f0600dc;
-        public static final int classic_item_selected_category_color=0x7f0600ec;
-        public static final int classic_normal_category_color=0x7f0600eb;
+        public static final int chat_background=0x7f07007c;
+        public static final int chat_history_time_text=0x7f070083;
+        public static final int chat_text=0x7f070081;
+        public static final int chat_time=0x7f070082;
+        public static final int chat_title_name=0x7f07007d;
+        public static final int class_listitemcolor=0x7f0700dc;
+        public static final int classic_item_selected_category_color=0x7f0700ec;
+        public static final int classic_normal_category_color=0x7f0700eb;
         /**  类别 
          */
-        public static final int classic_selected_category_color=0x7f0600ea;
-        public static final int color_bai=0x7f060076;
-        public static final int color_bai_8=0x7f060077;
-        public static final int color_cihei=0x7f060071;
-        public static final int color_divider=0x7f06008c;
-        public static final int color_divider_for_contactlist_lower=0x7f06008d;
-        public static final int color_divider_for_recentlist_upper=0x7f06008f;
-        public static final int color_divider_for_trooplist=0x7f06008e;
-        public static final int color_hei=0x7f06006f;
-        public static final int color_hei_8=0x7f060070;
-        public static final int color_lan=0x7f060078;
-        public static final int color_qianhui=0x7f060074;
-        public static final int color_shenhui=0x7f060072;
-        public static final int color_zhonghui=0x7f060073;
-        public static final int color_zuiqianhui=0x7f060075;
-        public static final int comment_nick_name=0x7f0600c4;
-        public static final int contact_category_text=0x7f06009c;
-        public static final int contact_category_text_focused=0x7f06009d;
-        public static final int contents_text=0x7f06002a;
-        public static final int cornor_clolr=0x7f060023;
-        public static final int cyan=0x7f060069;
-        public static final int dark=0x7f060000;
+        public static final int classic_selected_category_color=0x7f0700ea;
+        public static final int color_bai=0x7f070076;
+        public static final int color_bai_8=0x7f070077;
+        public static final int color_cihei=0x7f070071;
+        public static final int color_divider=0x7f07008c;
+        public static final int color_divider_for_contactlist_lower=0x7f07008d;
+        public static final int color_divider_for_recentlist_upper=0x7f07008f;
+        public static final int color_divider_for_trooplist=0x7f07008e;
+        public static final int color_hei=0x7f07006f;
+        public static final int color_hei_8=0x7f070070;
+        public static final int color_lan=0x7f070078;
+        public static final int color_qianhui=0x7f070074;
+        public static final int color_shenhui=0x7f070072;
+        public static final int color_zhonghui=0x7f070073;
+        public static final int color_zuiqianhui=0x7f070075;
+        public static final int comment_nick_name=0x7f0700c4;
+        public static final int contact_category_text=0x7f07009c;
+        public static final int contact_category_text_focused=0x7f07009d;
+        public static final int contents_text=0x7f07002a;
+        public static final int cornor_clolr=0x7f070023;
+        public static final int cyan=0x7f070069;
+        public static final int dark=0x7f070000;
         /**  <color name="green">#FF00FF00</color>> 
          */
-        public static final int darkGreen=0x7f060067;
+        public static final int darkGreen=0x7f070067;
         /**  <color name="dark">#000000</color> 
  <color name="red">#FF0000</color> 
          */
-        public static final int darkred=0x7f06004f;
-        public static final int deep_gray=0x7f0600db;
-        public static final int dialog_bottom_line=0x7f06004c;
-        public static final int dialog_top_line=0x7f06004d;
-        public static final int dkgray=0x7f06005f;
-        public static final int doodle_bg=0x7f060089;
-        public static final int emo_item_sel=0x7f0600b1;
-        public static final int encode_view=0x7f06002b;
-        public static final int feed_image_background_color=0x7f0600c9;
-        public static final int feed_item_assist_text_color=0x7f0600c6;
-        public static final int feed_item_comm_text=0x7f0600d3;
-        public static final int feed_item_commbutton_text=0x7f0600d2;
-        public static final int feed_item_comment_background=0x7f0600ca;
-        public static final int feed_item_comment_press_background=0x7f0600b2;
-        public static final int feed_item_content_text_color=0x7f0600c7;
-        public static final int feed_item_content_text_color_normal=0x7f0600c8;
-        public static final int feed_item_pressed=0x7f0600c3;
-        public static final int feed_item_time_text=0x7f0600d1;
-        public static final int feed_operation_text_color=0x7f0600c5;
-        public static final int feedcontenttextColor=0x7f0600d0;
-        public static final int fifteen_trans_black=0x7f060098;
+        public static final int darkred=0x7f07004f;
+        public static final int deep_gray=0x7f0700db;
+        public static final int dialog_bottom_line=0x7f07004c;
+        public static final int dialog_top_line=0x7f07004d;
+        public static final int dkgray=0x7f07005f;
+        public static final int doodle_bg=0x7f070089;
+        public static final int emo_item_sel=0x7f0700b1;
+        public static final int encode_view=0x7f07002b;
+        public static final int feed_image_background_color=0x7f0700c9;
+        public static final int feed_item_assist_text_color=0x7f0700c6;
+        public static final int feed_item_comm_text=0x7f0700d3;
+        public static final int feed_item_commbutton_text=0x7f0700d2;
+        public static final int feed_item_comment_background=0x7f0700ca;
+        public static final int feed_item_comment_press_background=0x7f0700b2;
+        public static final int feed_item_content_text_color=0x7f0700c7;
+        public static final int feed_item_content_text_color_normal=0x7f0700c8;
+        public static final int feed_item_pressed=0x7f0700c3;
+        public static final int feed_item_time_text=0x7f0700d1;
+        public static final int feed_operation_text_color=0x7f0700c5;
+        public static final int feedcontenttextColor=0x7f0700d0;
+        public static final int fifteen_trans_black=0x7f070098;
         /**  字体颜色 黑 
          */
-        public static final int font_black=0x7f06004e;
+        public static final int font_black=0x7f07004e;
         /**  主界面背景色 
          */
-        public static final int fragment_home_bg=0x7f0600dd;
+        public static final int fragment_home_bg=0x7f0700dd;
         /**  金色 
          */
-        public static final int gold=0x7f060018;
+        public static final int gold=0x7f070018;
         /**  白灰色 
          */
-        public static final int gray=0x7f060004;
-        public static final int gray6=0x7f060044;
-        public static final int gray7=0x7f060045;
-        public static final int gray_white=0x7f060053;
+        public static final int gray=0x7f070004;
+        public static final int gray6=0x7f070044;
+        public static final int gray7=0x7f070045;
+        public static final int gray_white=0x7f070053;
         /**  绿色 
          */
-        public static final int green=0x7f06000f;
+        public static final int green=0x7f07000f;
         /**  灰色 
          */
-        public static final int grey=0x7f060005;
-        public static final int grey1=0x7f060006;
-        public static final int grey_text=0x7f060022;
-        public static final int grgray=0x7f060043;
-        public static final int header=0x7f060042;
-        public static final int help_button_view=0x7f06002c;
-        public static final int help_view=0x7f06002d;
-        public static final int holo_blue=0x7f0600da;
-        public static final int home_gray_line=0x7f060060;
+        public static final int grey=0x7f070005;
+        public static final int grey1=0x7f070006;
+        public static final int grey_text=0x7f070022;
+        public static final int grgray=0x7f070043;
+        public static final int header=0x7f070042;
+        public static final int help_button_view=0x7f07002c;
+        public static final int help_view=0x7f07002d;
+        public static final int holo_blue=0x7f0700da;
+        public static final int home_gray_line=0x7f070060;
         /**  首页红色 
          */
-        public static final int index_red=0x7f060014;
+        public static final int index_red=0x7f070014;
         /**  首页红色按下 
          */
-        public static final int index_red_press=0x7f060015;
-        public static final int item_text=0x7f060059;
-        public static final int light_gray=0x7f060052;
-        public static final int light_red=0x7f060051;
-        public static final int lightblue=0x7f060056;
-        public static final int lightgray=0x7f0600b7;
-        public static final int linegray=0x7f060062;
-        public static final int list_contact_prompt_line=0x7f060095;
-        public static final int list_item_focus_for_friendlist=0x7f060094;
-        public static final int list_item_focus_for_troop=0x7f060093;
-        public static final int list_item_line=0x7f06009b;
-        public static final int list_item_press=0x7f06009a;
-        public static final int low_brown=0x7f060020;
-        public static final int ltgray=0x7f060063;
-        public static final int magenta=0x7f06006a;
-        public static final int main_guide_normal_color=0x7f060002;
-        public static final int main_guide_press_color=0x7f060001;
-        public static final int mediumOrchid=0x7f06006b;
-        public static final int miaoshabac=0x7f0600f9;
-        public static final int milky=0x7f060050;
-        public static final int myfeed_comment_color=0x7f0600ce;
-        public static final int myfeed_item_comment_text_color=0x7f0600cc;
-        public static final int myfeed_item_content_text_color=0x7f0600cb;
-        public static final int myfeed_item_more_comment_color=0x7f0600cd;
-        public static final int myfeed_item_praise_text=0x7f0600cf;
-        public static final int nineideyanse=0x7f06006e;
-        public static final int no_auto_reply_normal=0x7f0600af;
-        public static final int no_auto_reply_press=0x7f0600b0;
-        public static final int obchildname=0x7f060065;
-        public static final int observertitle=0x7f060066;
+        public static final int index_red_press=0x7f070015;
+        public static final int item_text=0x7f070059;
+        public static final int light_gray=0x7f070052;
+        public static final int light_red=0x7f070051;
+        public static final int lightblue=0x7f070056;
+        public static final int lightgray=0x7f0700b7;
+        public static final int linegray=0x7f070062;
+        public static final int list_contact_prompt_line=0x7f070095;
+        public static final int list_item_focus_for_friendlist=0x7f070094;
+        public static final int list_item_focus_for_troop=0x7f070093;
+        public static final int list_item_line=0x7f07009b;
+        public static final int list_item_press=0x7f07009a;
+        public static final int low_brown=0x7f070020;
+        public static final int ltgray=0x7f070063;
+        public static final int magenta=0x7f07006a;
+        public static final int main_guide_normal_color=0x7f070002;
+        public static final int main_guide_press_color=0x7f070001;
+        public static final int mediumOrchid=0x7f07006b;
+        public static final int miaoshabac=0x7f0700f9;
+        public static final int milky=0x7f070050;
+        public static final int myfeed_comment_color=0x7f0700ce;
+        public static final int myfeed_item_comment_text_color=0x7f0700cc;
+        public static final int myfeed_item_content_text_color=0x7f0700cb;
+        public static final int myfeed_item_more_comment_color=0x7f0700cd;
+        public static final int myfeed_item_praise_text=0x7f0700cf;
+        public static final int nineideyanse=0x7f07006e;
+        public static final int no_auto_reply_normal=0x7f0700af;
+        public static final int no_auto_reply_press=0x7f0700b0;
+        public static final int obchildname=0x7f070065;
+        public static final int observertitle=0x7f070066;
         /**  橙色 
          */
-        public static final int orange=0x7f06001b;
-        public static final int orange2=0x7f060027;
-        public static final int orange5=0x7f06004a;
-        public static final int orange_bg=0x7f06001c;
-        public static final int pink=0x7f060021;
-        public static final int possible_result_points=0x7f06002e;
+        public static final int orange=0x7f07001b;
+        public static final int orange2=0x7f070027;
+        public static final int orange5=0x7f07004a;
+        public static final int orange_bg=0x7f07001c;
+        public static final int pink=0x7f070021;
+        public static final int possible_result_points=0x7f07002e;
         /**  灰色进度条 
          */
-        public static final int progress_gray_bg=0x7f060019;
-        public static final int qq_normal=0x7f06008a;
-        public static final int qzone_black=0x7f0600b3;
-        public static final int qzone_feed_comm_text_un=0x7f0600d4;
-        public static final int qzone_feed_content=0x7f0600bc;
-        public static final int qzone_myfeed_rztitle=0x7f0600ba;
-        public static final int qzone_myfeed_title=0x7f0600bb;
-        public static final int qzone_picviewer_description=0x7f0600d9;
-        public static final int qzone_picviewer_loading_bg=0x7f0600d7;
-        public static final int qzone_picviewer_loading_loaded=0x7f0600d8;
-        public static final int qzone_picviewer_loading_text=0x7f0600d5;
-        public static final int qzone_picviewer_loading_toload=0x7f0600d6;
-        public static final int qzone_shuoshuo_textcount_exceed_color=0x7f0600c2;
-        public static final int qzone_shuoshuo_textcount_normal_color=0x7f0600c1;
-        public static final int qzone_transparent=0x7f0600b5;
-        public static final int qzone_white=0x7f0600b4;
-        public static final int recent_msg=0x7f060086;
-        public static final int recommend_products_click_to_view=0x7f060047;
-        public static final int recommend_products_item_line=0x7f060048;
-        public static final int recommend_products_title=0x7f060046;
+        public static final int progress_gray_bg=0x7f070019;
+        public static final int qq_normal=0x7f07008a;
+        public static final int qzone_black=0x7f0700b3;
+        public static final int qzone_feed_comm_text_un=0x7f0700d4;
+        public static final int qzone_feed_content=0x7f0700bc;
+        public static final int qzone_myfeed_rztitle=0x7f0700ba;
+        public static final int qzone_myfeed_title=0x7f0700bb;
+        public static final int qzone_picviewer_description=0x7f0700d9;
+        public static final int qzone_picviewer_loading_bg=0x7f0700d7;
+        public static final int qzone_picviewer_loading_loaded=0x7f0700d8;
+        public static final int qzone_picviewer_loading_text=0x7f0700d5;
+        public static final int qzone_picviewer_loading_toload=0x7f0700d6;
+        public static final int qzone_shuoshuo_textcount_exceed_color=0x7f0700c2;
+        public static final int qzone_shuoshuo_textcount_normal_color=0x7f0700c1;
+        public static final int qzone_transparent=0x7f0700b5;
+        public static final int qzone_white=0x7f0700b4;
+        public static final int recent_msg=0x7f070086;
+        public static final int recommend_products_click_to_view=0x7f070047;
+        public static final int recommend_products_item_line=0x7f070048;
+        public static final int recommend_products_title=0x7f070046;
         /**  记录-item内容字体颜色 
          */
-        public static final int record_content_text_color=0x7f060008;
-        public static final int record_line_color=0x7f060009;
+        public static final int record_content_text_color=0x7f070008;
+        public static final int record_line_color=0x7f070009;
         /**  红色 
          */
-        public static final int red=0x7f060017;
-        public static final int red_color=0x7f060025;
+        public static final int red=0x7f070017;
+        public static final int red_color=0x7f070025;
         /**  首页红色按下 
          */
-        public static final int red_dark=0x7f060016;
-        public static final int red_font=0x7f0600ee;
-        public static final int red_pressed=0x7f0600ed;
+        public static final int red_dark=0x7f070016;
+        public static final int red_font=0x7f0700ee;
+        public static final int red_pressed=0x7f0700ed;
         /**  红色进度条 
          */
-        public static final int red_progress_bg=0x7f06001a;
-        public static final int result_image_border=0x7f06002f;
-        public static final int result_minor_text=0x7f060030;
-        public static final int result_points=0x7f060031;
-        public static final int result_text=0x7f060032;
-        public static final int result_view=0x7f060033;
+        public static final int red_progress_bg=0x7f07001a;
+        public static final int result_image_border=0x7f07002f;
+        public static final int result_minor_text=0x7f070030;
+        public static final int result_points=0x7f070031;
+        public static final int result_text=0x7f070032;
+        public static final int result_view=0x7f070033;
         /**   
          */
-        public static final int sank_noselect=0x7f0600e8;
-        public static final int sank_select=0x7f0600e9;
-        public static final int sbc_header_text=0x7f060034;
-        public static final int sbc_header_view=0x7f060035;
-        public static final int sbc_layout_view=0x7f060037;
-        public static final int sbc_list_item=0x7f060036;
-        public static final int sbc_page_number_text=0x7f060038;
-        public static final int sbc_snippet_text=0x7f060039;
-        public static final int sc_black=0x7f0600a1;
-        public static final int sc_chat_contact=0x7f0600a0;
-        public static final int sc_gray=0x7f0600a4;
-        public static final int sc_info_btn_press=0x7f0600a7;
-        public static final int sc_name=0x7f0600a5;
-        public static final int sc_red=0x7f06009f;
-        public static final int sc_transparent=0x7f0600a3;
-        public static final int sc_transparent_background=0x7f0600a6;
-        public static final int sc_transparent_black=0x7f06009e;
-        public static final int sc_white=0x7f0600a2;
-        public static final int screenshot_normal=0x7f060084;
-        public static final int screenshot_pressed=0x7f060085;
-        public static final int search_cancel_text=0x7f060088;
-        public static final int search_text=0x7f060087;
-        public static final int semi_transparent=0x7f060090;
-        public static final int semi_transparent_w=0x7f060091;
-        public static final int setting_bg=0x7f0600ae;
-        public static final int setting_text1=0x7f0600ac;
-        public static final int setting_text2=0x7f0600ad;
-        public static final int share_text=0x7f06003a;
-        public static final int share_view=0x7f06003b;
-        public static final int shorttextColor=0x7f0600c0;
-        public static final int sqqname=0x7f060092;
-        public static final int status_text=0x7f06003d;
-        public static final int status_view=0x7f06003c;
-        public static final int subscribe_item_disabled_bg=0x7f0600e3;
-        public static final int subscribe_item_disabled_stroke=0x7f0600e2;
-        public static final int subscribe_item_drag_bg=0x7f0600de;
-        public static final int subscribe_item_drag_stroke=0x7f0600df;
-        public static final int subscribe_item_normal_bg=0x7f0600e6;
-        public static final int subscribe_item_normal_stroke=0x7f0600e7;
-        public static final int subscribe_item_pressed_bg=0x7f0600e4;
-        public static final int subscribe_item_pressed_stroke=0x7f0600e5;
-        public static final int subscribe_item_selected_bg=0x7f0600e1;
-        public static final int subscribe_item_selected_stroke=0x7f0600e0;
-        public static final int tab_background=0x7f06005e;
-        public static final int tab_focus=0x7f060057;
-        public static final int tab_font_focus=0x7f06005c;
-        public static final int tab_font_press=0x7f06005d;
-        public static final int tab_font_selected=0x7f06005b;
-        public static final int tab_font_unselected=0x7f06005a;
-        public static final int tab_press=0x7f060058;
-        public static final int tab_selected=0x7f060055;
-        public static final int tab_unselected=0x7f060054;
-        public static final int tag_textview1=0x7f0600a9;
-        public static final int tag_textview2=0x7f0600aa;
-        public static final int tag_textview3=0x7f0600ab;
+        public static final int sank_noselect=0x7f0700e8;
+        public static final int sank_select=0x7f0700e9;
+        public static final int sbc_header_text=0x7f070034;
+        public static final int sbc_header_view=0x7f070035;
+        public static final int sbc_layout_view=0x7f070037;
+        public static final int sbc_list_item=0x7f070036;
+        public static final int sbc_page_number_text=0x7f070038;
+        public static final int sbc_snippet_text=0x7f070039;
+        public static final int sc_black=0x7f0700a1;
+        public static final int sc_chat_contact=0x7f0700a0;
+        public static final int sc_gray=0x7f0700a4;
+        public static final int sc_info_btn_press=0x7f0700a7;
+        public static final int sc_name=0x7f0700a5;
+        public static final int sc_red=0x7f07009f;
+        public static final int sc_transparent=0x7f0700a3;
+        public static final int sc_transparent_background=0x7f0700a6;
+        public static final int sc_transparent_black=0x7f07009e;
+        public static final int sc_white=0x7f0700a2;
+        public static final int screenshot_normal=0x7f070084;
+        public static final int screenshot_pressed=0x7f070085;
+        public static final int search_cancel_text=0x7f070088;
+        public static final int search_text=0x7f070087;
+        public static final int semi_transparent=0x7f070090;
+        public static final int semi_transparent_w=0x7f070091;
+        public static final int setting_bg=0x7f0700ae;
+        public static final int setting_text1=0x7f0700ac;
+        public static final int setting_text2=0x7f0700ad;
+        public static final int share_text=0x7f07003a;
+        public static final int share_view=0x7f07003b;
+        public static final int shorttextColor=0x7f0700c0;
+        public static final int sqqname=0x7f070092;
+        public static final int status_text=0x7f07003d;
+        public static final int status_view=0x7f07003c;
+        public static final int subscribe_item_disabled_bg=0x7f0700e3;
+        public static final int subscribe_item_disabled_stroke=0x7f0700e2;
+        public static final int subscribe_item_drag_bg=0x7f0700de;
+        public static final int subscribe_item_drag_stroke=0x7f0700df;
+        public static final int subscribe_item_normal_bg=0x7f0700e6;
+        public static final int subscribe_item_normal_stroke=0x7f0700e7;
+        public static final int subscribe_item_pressed_bg=0x7f0700e4;
+        public static final int subscribe_item_pressed_stroke=0x7f0700e5;
+        public static final int subscribe_item_selected_bg=0x7f0700e1;
+        public static final int subscribe_item_selected_stroke=0x7f0700e0;
+        public static final int tab_background=0x7f07005e;
+        public static final int tab_focus=0x7f070057;
+        public static final int tab_font_focus=0x7f07005c;
+        public static final int tab_font_press=0x7f07005d;
+        public static final int tab_font_selected=0x7f07005b;
+        public static final int tab_font_unselected=0x7f07005a;
+        public static final int tab_press=0x7f070058;
+        public static final int tab_selected=0x7f070055;
+        public static final int tab_unselected=0x7f070054;
+        public static final int tag_textview1=0x7f0700a9;
+        public static final int tag_textview2=0x7f0700aa;
+        public static final int tag_textview3=0x7f0700ab;
         /**  浅黑色字体 
          */
-        public static final int text_color_black=0x7f06000c;
+        public static final int text_color_black=0x7f07000c;
         /**  深黑色字体 
          */
-        public static final int text_color_black2=0x7f06000e;
+        public static final int text_color_black2=0x7f07000e;
         /**  棕色字体 
          */
-        public static final int text_color_brown=0x7f06000a;
+        public static final int text_color_brown=0x7f07000a;
         /**  绿色字体 
          */
-        public static final int text_color_green=0x7f06000d;
+        public static final int text_color_green=0x7f07000d;
         /**  红色字体 
          */
-        public static final int text_color_red=0x7f06000b;
-        public static final int text_comment=0x7f0600bf;
-        public static final int text_drag_refresh_big=0x7f0600a8;
-        public static final int text_nick_name=0x7f0600be;
-        public static final int text_shadow_color=0x7f06006d;
-        public static final int thirty_transparent_black=0x7f060096;
+        public static final int text_color_red=0x7f07000b;
+        public static final int text_comment=0x7f0700bf;
+        public static final int text_drag_refresh_big=0x7f0700a8;
+        public static final int text_nick_name=0x7f0700be;
+        public static final int text_shadow_color=0x7f07006d;
+        public static final int thirty_transparent_black=0x7f070096;
         /**  tip color 
          */
-        public static final int tip_text_color=0x7f060007;
-        public static final int title_bg=0x7f06007a;
-        public static final int traffic_bg=0x7f06007e;
-        public static final int traffic_data=0x7f060080;
-        public static final int traffic_txt=0x7f06007f;
-        public static final int translucent_background=0x7f0600bd;
-        public static final int transparent=0x7f06003e;
-        public static final int transparent111=0x7f060028;
-        public static final int transparentpercent=0x7f0600b6;
-        public static final int twenty_transparent_black=0x7f060097;
+        public static final int tip_text_color=0x7f070007;
+        public static final int title_bg=0x7f07007a;
+        public static final int traffic_bg=0x7f07007e;
+        public static final int traffic_data=0x7f070080;
+        public static final int traffic_txt=0x7f07007f;
+        public static final int translucent_background=0x7f0700bd;
+        public static final int transparent=0x7f07003e;
+        public static final int transparent111=0x7f070028;
+        public static final int transparentpercent=0x7f0700b6;
+        public static final int twenty_transparent_black=0x7f070097;
         /** 
     <color name="white">#ffffffff</color>
     <color name="black">@color/color_hei</color>
     
          */
-        public static final int video_bg_color=0x7f06008b;
-        public static final int viewfinder_frame=0x7f06003f;
-        public static final int viewfinder_laser=0x7f060040;
-        public static final int viewfinder_mask=0x7f060041;
-        public static final int white=0x7f06001e;
-        public static final int window_bg=0x7f060079;
+        public static final int video_bg_color=0x7f07008b;
+        public static final int viewfinder_frame=0x7f07003f;
+        public static final int viewfinder_laser=0x7f070040;
+        public static final int viewfinder_mask=0x7f070041;
+        public static final int white=0x7f07001e;
+        public static final int window_bg=0x7f070079;
         /**  <color name="blue">#FF0000FF</color> 
          */
-        public static final int yellow=0x7f060068;
-        public static final int yt_black=0x7f0600f0;
+        public static final int yellow=0x7f070068;
+        public static final int yt_black=0x7f0700f0;
         /**  友推 
          */
-        public static final int yt_blue=0x7f0600ef;
-        public static final int yt_cap_blue=0x7f0600f2;
-        public static final int yt_cap_blue_green=0x7f0600f3;
-        public static final int yt_cap_gray=0x7f0600f4;
-        public static final int yt_cap_green=0x7f0600f5;
-        public static final int yt_cap_orange=0x7f0600f6;
-        public static final int yt_cap_red=0x7f0600f1;
-        public static final int yt_cap_yellow=0x7f0600f7;
-        public static final int yt_qrcode_blue=0x7f0600f8;
+        public static final int yt_blue=0x7f0700ef;
+        public static final int yt_cap_blue=0x7f0700f2;
+        public static final int yt_cap_blue_green=0x7f0700f3;
+        public static final int yt_cap_gray=0x7f0700f4;
+        public static final int yt_cap_green=0x7f0700f5;
+        public static final int yt_cap_orange=0x7f0700f6;
+        public static final int yt_cap_red=0x7f0700f1;
+        public static final int yt_cap_yellow=0x7f0700f7;
+        public static final int yt_qrcode_blue=0x7f0700f8;
     }
     public static final class dimen {
-        public static final int actionbar_height=0x7f070004;
-        public static final int common_text_size=0x7f07000b;
-        public static final int dialog_btn_size=0x7f070002;
-        public static final int dialog_content_size=0x7f070001;
+        public static final int actionbar_height=0x7f080004;
+        public static final int common_text_size=0x7f08000b;
+        public static final int dialog_btn_size=0x7f080002;
+        public static final int dialog_content_size=0x7f080001;
         /**  版本更新 
          */
-        public static final int dialog_title_size=0x7f070000;
-        public static final int header_footer_internal_padding=0x7f07000a;
-        public static final int header_footer_left_right_padding=0x7f070008;
-        public static final int header_footer_top_bottom_padding=0x7f070009;
-        public static final int indicator_corner_radius=0x7f070006;
-        public static final int indicator_internal_padding=0x7f070007;
-        public static final int indicator_right_padding=0x7f070005;
+        public static final int dialog_title_size=0x7f080000;
+        public static final int header_footer_internal_padding=0x7f08000a;
+        public static final int header_footer_left_right_padding=0x7f080008;
+        public static final int header_footer_top_bottom_padding=0x7f080009;
+        public static final int indicator_corner_radius=0x7f080006;
+        public static final int indicator_internal_padding=0x7f080007;
+        public static final int indicator_right_padding=0x7f080005;
         /**   
          */
-        public static final int search_item_height=0x7f070003;
+        public static final int search_item_height=0x7f080003;
     }
     public static final class drawable {
         public static final int ab_home_barcode=0x7f020000;
@@ -974,87 +974,87 @@ containing a value of this type.
         public static final int welcome=0x7f02002c;
     }
     public static final class id {
-        public static final int Mview=0x7f080023;
-        public static final int ScrollView01=0x7f080026;
-        public static final int alwaysScroll=0x7f080010;
-        public static final int auto_fit=0x7f080019;
-        public static final int both=0x7f08001a;
-        public static final int bottom=0x7f080005;
-        public static final int btn_gui3_bottom=0x7f080047;
-        public static final int center=0x7f080006;
-        public static final int center_horizontal=0x7f080007;
-        public static final int center_vertical=0x7f080008;
-        public static final int clip_horizontal=0x7f080009;
-        public static final int clip_vertical=0x7f08000a;
-        public static final int clv_search_story=0x7f080033;
-        public static final int columnWidth=0x7f080015;
-        public static final int disabled=0x7f080011;
-        public static final int draggrid_body=0x7f080029;
-        public static final int fifth_page_item=0x7f080043;
-        public static final int fifth_page_iv=0x7f080044;
-        public static final int fifth_page_tv=0x7f080045;
-        public static final int fill=0x7f080003;
-        public static final int fill_horizontal=0x7f08000b;
-        public static final int fill_vertical=0x7f08000c;
-        public static final int first_page_item=0x7f080037;
-        public static final int first_page_iv=0x7f080038;
-        public static final int first_page_tv=0x7f080039;
-        public static final int fl_inner=0x7f080030;
-        public static final int flip=0x7f080020;
-        public static final int fourth_page_item=0x7f080040;
-        public static final int fourth_page_iv=0x7f080041;
-        public static final int fourth_page_tv=0x7f080042;
-        public static final int gridview=0x7f080000;
-        public static final int home_body_scrollview=0x7f08004d;
-        public static final int home_mscrolllay=0x7f08004e;
-        public static final int horizontal=0x7f080013;
-        public static final int imageview=0x7f080028;
-        public static final int imgView=0x7f080027;
-        public static final int img_arrow=0x7f08004c;
-        public static final int layout_history=0x7f080032;
-        public static final int left=0x7f08000d;
-        public static final int left_listview=0x7f08004a;
-        public static final int login_doag_name=0x7f08002b;
-        public static final int m_animationsild=0x7f080049;
-        public static final int main_welcome_message=0x7f080048;
-        public static final int manualOnly=0x7f08001b;
-        public static final int midline_line=0x7f080024;
-        public static final int none=0x7f080016;
-        public static final int normal=0x7f080012;
-        public static final int progressBar1=0x7f08002a;
-        public static final int pullDownFromTop=0x7f08001c;
-        public static final int pullFromEnd=0x7f08001d;
-        public static final int pullFromStart=0x7f08001e;
-        public static final int pullUpFromBottom=0x7f08001f;
-        public static final int pull_to_refresh_image=0x7f08002c;
-        public static final int pull_to_refresh_progress=0x7f08002d;
-        public static final int pull_to_refresh_sub_text=0x7f08002f;
-        public static final int pull_to_refresh_text=0x7f08002e;
-        public static final int right=0x7f08000e;
-        public static final int rightCategoryList=0x7f08004b;
-        public static final int rotate=0x7f080021;
-        public static final int scrollview=0x7f080002;
-        public static final int second_page_item=0x7f08003a;
-        public static final int second_page_iv=0x7f08003b;
-        public static final int second_page_tv=0x7f08003c;
-        public static final int spacingWidth=0x7f080017;
-        public static final int spacingWidthUniform=0x7f080018;
-        public static final int stroke=0x7f080004;
-        public static final int tab_lay=0x7f080025;
-        public static final int test_textview=0x7f080046;
-        public static final int third_page_item=0x7f08003d;
-        public static final int third_page_iv=0x7f08003e;
-        public static final int third_page_tv=0x7f08003f;
-        public static final int top=0x7f08000f;
-        public static final int top_search=0x7f080022;
-        public static final int tv_bottom=0x7f080036;
-        public static final int tv_history=0x7f080031;
-        public static final int version=0x7f080035;
-        public static final int vertical=0x7f080014;
-        public static final int viewflow=0x7f08004f;
-        public static final int viewflowindic=0x7f080050;
-        public static final int webview=0x7f080001;
-        public static final int welcome=0x7f080034;
+        public static final int Mview=0x7f050023;
+        public static final int ScrollView01=0x7f050026;
+        public static final int alwaysScroll=0x7f05000f;
+        public static final int auto_fit=0x7f050016;
+        public static final int both=0x7f050019;
+        public static final int bottom=0x7f050003;
+        public static final int btn_gui3_bottom=0x7f050047;
+        public static final int center=0x7f05000a;
+        public static final int center_horizontal=0x7f050008;
+        public static final int center_vertical=0x7f050006;
+        public static final int clip_horizontal=0x7f05000c;
+        public static final int clip_vertical=0x7f05000b;
+        public static final int clv_search_story=0x7f050033;
+        public static final int columnWidth=0x7f050014;
+        public static final int disabled=0x7f05000d;
+        public static final int draggrid_body=0x7f050029;
+        public static final int fifth_page_item=0x7f050043;
+        public static final int fifth_page_iv=0x7f050044;
+        public static final int fifth_page_tv=0x7f050045;
+        public static final int fill=0x7f050001;
+        public static final int fill_horizontal=0x7f050009;
+        public static final int fill_vertical=0x7f050007;
+        public static final int first_page_item=0x7f050037;
+        public static final int first_page_iv=0x7f050038;
+        public static final int first_page_tv=0x7f050039;
+        public static final int fl_inner=0x7f050030;
+        public static final int flip=0x7f05001e;
+        public static final int fourth_page_item=0x7f050040;
+        public static final int fourth_page_iv=0x7f050041;
+        public static final int fourth_page_tv=0x7f050042;
+        public static final int gridview=0x7f05001f;
+        public static final int home_body_scrollview=0x7f05004d;
+        public static final int home_mscrolllay=0x7f05004e;
+        public static final int horizontal=0x7f050011;
+        public static final int imageview=0x7f050028;
+        public static final int imgView=0x7f050027;
+        public static final int img_arrow=0x7f05004c;
+        public static final int layout_history=0x7f050032;
+        public static final int left=0x7f050004;
+        public static final int left_listview=0x7f05004a;
+        public static final int login_doag_name=0x7f05002b;
+        public static final int m_animationsild=0x7f050049;
+        public static final int main_welcome_message=0x7f050048;
+        public static final int manualOnly=0x7f05001a;
+        public static final int midline_line=0x7f050024;
+        public static final int none=0x7f050012;
+        public static final int normal=0x7f05000e;
+        public static final int progressBar1=0x7f05002a;
+        public static final int pullDownFromTop=0x7f05001b;
+        public static final int pullFromEnd=0x7f050018;
+        public static final int pullFromStart=0x7f050017;
+        public static final int pullUpFromBottom=0x7f05001c;
+        public static final int pull_to_refresh_image=0x7f05002c;
+        public static final int pull_to_refresh_progress=0x7f05002d;
+        public static final int pull_to_refresh_sub_text=0x7f05002f;
+        public static final int pull_to_refresh_text=0x7f05002e;
+        public static final int right=0x7f050005;
+        public static final int rightCategoryList=0x7f05004b;
+        public static final int rotate=0x7f05001d;
+        public static final int scrollview=0x7f050021;
+        public static final int second_page_item=0x7f05003a;
+        public static final int second_page_iv=0x7f05003b;
+        public static final int second_page_tv=0x7f05003c;
+        public static final int spacingWidth=0x7f050013;
+        public static final int spacingWidthUniform=0x7f050015;
+        public static final int stroke=0x7f050000;
+        public static final int tab_lay=0x7f050025;
+        public static final int test_textview=0x7f050046;
+        public static final int third_page_item=0x7f05003d;
+        public static final int third_page_iv=0x7f05003e;
+        public static final int third_page_tv=0x7f05003f;
+        public static final int top=0x7f050002;
+        public static final int top_search=0x7f050022;
+        public static final int tv_bottom=0x7f050036;
+        public static final int tv_history=0x7f050031;
+        public static final int version=0x7f050035;
+        public static final int vertical=0x7f050010;
+        public static final int viewflow=0x7f05004f;
+        public static final int viewflowindic=0x7f050050;
+        public static final int webview=0x7f050020;
+        public static final int welcome=0x7f050034;
     }
     public static final class layout {
         public static final int actionbar_home=0x7f030000;

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        layout="@layout/actionbar_home" />
+
+    <com.wuzeng.ui.VerticalScrollview
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无搜索历史" />
+
+            <LinearLayout
+                android:id="@+id/layout_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.custom.vg.list.CustomListView
+                        android:id="@+id/clv_search_story"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp" >
+                    </com.custom.vg.list.CustomListView>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.wuzeng.ui.VerticalScrollview>
+
+</LinearLayout>

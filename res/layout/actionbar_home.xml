@@ -14,9 +14,9 @@
         android:layout_height="wrap_content" />
 
     <LinearLayout
-        android:id="@+id/top_search"
         android:layout_width="0dp"
         android:layout_weight="2"
+        android:id="@+id/top_search"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="7dp"
         android:background="@drawable/common_edit_content"
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
-        <EditText
+        <TextView
             android:layout_gravity="center_vertical"
             android:textSize="11sp"
             android:hint="买一买的吴增的东西吧"

@@ -3,6 +3,7 @@ package com.wuzeng.adapter;
 import com.example.wuzeng_app.R;
 
 import android.content.Context;
+import android.opengl.Visibility;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -12,6 +13,7 @@ public class CategoryLeftViewAdapter extends BaseAdapter {
 
 	private String[] mStrings={"item0","item1","item2","item3","item4","item5"};
 	private Context context;
+	private boolean Hidefag;
 	
 	
 	public CategoryLeftViewAdapter(Context context){
@@ -50,19 +52,27 @@ public class CategoryLeftViewAdapter extends BaseAdapter {
 		}else {
 			viewHolder = (ViewHolder) convertView.getTag();
 		}
+		
+		
 		viewHolder.description.setText(mStrings[position]);
+		
+		if(Hidefag){
+			viewHolder.description.setVisibility(View.INVISIBLE);
+		}else {
+			viewHolder.description.setVisibility(View.VISIBLE);
+		}
 		
 		return convertView;
 	}
 
 	public boolean isHideFlag() {
 		// TODO Auto-generated method stub
-		return false;
+		return Hidefag;
 	}
 
 	public void setHideFlag(boolean b) {
 		// TODO Auto-generated method stub
-		
+		this.Hidefag=b;
 	}
 	
 	public class ViewHolder{

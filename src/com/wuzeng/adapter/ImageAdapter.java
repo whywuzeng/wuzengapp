@@ -18,6 +18,7 @@ package com.wuzeng.adapter;
 import java.util.List;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -28,11 +29,13 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 
+import com.example.wuzeng_app.LnkToolsActivity;
 import com.example.wuzeng_app.R;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
+import com.wuzeng.StartActivity;
 import com.wuzeng.bean.Galleryad;
 
 public class ImageAdapter extends BaseAdapter {
@@ -61,6 +64,10 @@ public class ImageAdapter extends BaseAdapter {
 		loader=ImageLoader.getInstance();
 		this.context=context;
 		this.gallery_list=gallery_list;
+//		for(){
+//		Galleryad galleryad=new Galleryad(rowId, imgUrl, flag, houdongId);
+//		}
+//		gallery_list.add()
 	}
 
 	@Override
@@ -80,7 +87,7 @@ public class ImageAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(final int position, View convertView, ViewGroup parent) {
-//		ViewHolder viewHolder=null;
+		ViewHolder viewHolder=null;
 		
 		if (convertView == null) {
 //			viewHolder=new ViewHolder();
@@ -90,13 +97,13 @@ public class ImageAdapter extends BaseAdapter {
 //			convertView =imageView;
 //			viewHolder.imageView=(ImageView)convertView;
 //			convertView.setTag(viewHolder);
-//			
+			
 			convertView = mInflater.inflate(R.layout.image_item, null);
-//			}else
-				
-//			{
-//				viewHolder=(ViewHolder)convertView.getTag();
+		
 			}
+//			else{
+//				viewHolder=(ViewHolder)convertView.getTag();
+//			}
 			
 //		Galleryad galleryad = gallery_list.get(position%gallery_list.size());
 //		loader.displayImage(galleryad.getImgUrl(), viewHolder.imageView, options);
@@ -138,9 +145,21 @@ public class ImageAdapter extends BaseAdapter {
 //				
 //			}
 //		});
+		ImageView mImageView=(ImageView)convertView.findViewById(R.id.imgView);
 		
 		((ImageView) convertView.findViewById(R.id.imgView))
 				.setImageResource(ids[position]);
+//		LnkToolsActivity
+		mImageView.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i=new Intent();
+				i.setClass(context,LnkToolsActivity.class );
+				context.startActivity(i);
+			}
+		});
 		return convertView;
 	}
 	

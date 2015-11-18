@@ -9,7 +9,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
 	private final static String DBNAME="wuzeng.db";
 	private final static int VERSION =1;
-	private final static String LinkTools_table="linktools";
+	public final static String LinkTools_table="linktools";
 	private final static String LINKTOOLS_SQL="CREATE TABLE IF NO exists" +LinkTools_table+"name text,imageUrl text,order integer,lnkId integer";
 	
 	

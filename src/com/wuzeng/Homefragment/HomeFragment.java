@@ -13,6 +13,7 @@ import com.wuzeng.adapter.CategoryLeftViewAdapter;
 import com.wuzeng.adapter.ImageAdapter;
 import com.wuzeng.bean.ChannelItem;
 import com.wuzeng.bean.HomeAllBean;
+import com.wuzeng.ui.ScrollLayout;
 import com.wuzeng.wight.pulltorefresh.PullToRefreshBase;
 import com.wuzeng.wight.pulltorefresh.PullToRefreshBase.Mode;
 import com.wuzeng.wight.pulltorefresh.PullToRefreshBase.OnRefreshListener2;
@@ -41,14 +42,14 @@ public class HomeFragment extends Fragment implements OnRefreshListener2{
 
 	}
 	private ViewFlow viewFlow;
+	private ScrollLayout mLayout; //滑动那个
 	private View view;
-	private ListView leftlistview;
-	private CategoryLeftViewAdapter mAdapter;
+	private LinearLayout top_search;
+
 	private PullToRefreshScrollView scrollView;
 	private List<ChannelItem> list;
 	private HomeAllBean bean;
 	private List<Galleryad> galleryads;
-	private LinearLayout top_search;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater,
@@ -63,50 +64,41 @@ public class HomeFragment extends Fragment implements OnRefreshListener2{
 	            p.removeAllViewsInLayout(); 
 	        }
 	        
+	        
 	        viewFlow = (ViewFlow)view .findViewById(R.id.viewflow);
 			viewFlow.setAdapter(new ImageAdapter(this.getActivity(),galleryads), 5);
 			CircleFlowIndicator indic = (CircleFlowIndicator)view. findViewById(R.id.viewflowindic);
 			viewFlow.setFlowIndicator(indic);
-			viewFlow.setOnClickListener(new View.OnClickListener() {
-				
-				@Override
-				public void onClick(View v) {
-					// TODO Auto-generated method stub
-					
-					
-				}
-			});
 			
 			initview(view);
 		
 		return view;
 	}
 	
-
-	private void initview(View view2) {
+	private void initview(View view) {
+		// TODO Auto-generated method stub
+		scrollView=(PullToRefreshScrollView) view.findViewById(R.id.home_body_scrollview);
+		scrollView.setMode(Mode.PULL_FROM_START);
+		scrollView.getLoadingLayoutProxy().setLastUpdatedLabel(System.currentTimeMillis()+"");
+		scrollView.setOnRefreshListener(this);
 		
+		mLayout=(ScrollLayout)view.findViewById(R.id.home_mscrolllay);
 		
-			// TODO Auto-generated method stub
-			scrollView=(PullToRefreshScrollView) view.findViewById(R.id.home_body_scrollview);
-			scrollView.setMode(Mode.PULL_FROM_START);
-			scrollView.getLoadingLayoutProxy().setLastUpdatedLabel(System.currentTimeMillis()+"");
-			scrollView.setOnRefreshListener(this);
-			top_search=(LinearLayout)view.findViewById(R.id.top_search);
+//		mLayout=new ScrollLayout(getActivity());
+		top_search=(LinearLayout)view.findViewById(R.id.top_search);
+		top_search.setOnClickListener(new View.OnClickListener() {
 			
-			top_search.setOnClickListener(new View.OnClickListener() {
-				
-				@Override
-				public void onClick(View v) {
-					// TODO Auto-generated method stub
-				
-					Intent i=new Intent();
-					i.setClass(getActivity(), SiteSearchActivity.class);
-					i.putExtra("content", "");
-					startActivity(i);
-				}
-			});
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i=new Intent();
+				i.setClass(getActivity(), SiteSearchActivity.class);
+				i.putExtra("context", "");
+				startActivity(i);
+			}
+		});
+		
 	}
-
 
 	public View getForView(){
 		

@@ -112,6 +112,7 @@ public class AnimationSildingLayout extends RelativeLayout {
 		this.rightView = rightView;
 		this.parentView = (ViewGroup) rightView.getParent();
 		parentView.setVisibility(INVISIBLE);
+//		parentView.setVisibility(VISIBLE);
 		arrowView = (ImageView) findViewById(R.id.img_arrow);//继承他的自雷
 		leftView.setOnScrollListener(new AbsListView.OnScrollListener() {
 			@Override
@@ -178,6 +179,7 @@ public class AnimationSildingLayout extends RelativeLayout {
 
 		return super.onInterceptTouchEvent(ev);
 	}
+	
 
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
@@ -246,9 +248,8 @@ public class AnimationSildingLayout extends RelativeLayout {
 	private void onLeftViewShorted() {
 		CategoryLeftViewAdapter ba = (CategoryLeftViewAdapter) leftView.getAdapter();
 		ba.setHideFlag(true);
-		//会不会加上这个 会onlayout
 		ba.notifyDataSetChanged();
-		leftView.setBackgroundColor(getResources().getColor(R.color.gray7));
+//		leftView.setBackgroundColor(getResources().getColor(R.color.gray7));
 	}
 
 	//左边的listview 显示的展示
@@ -274,16 +275,25 @@ public class AnimationSildingLayout extends RelativeLayout {
 
 	@Override
 	protected void onLayout(boolean changed, int l, int t, int r, int b) {
-
+		Log.i("onLayout", "onLayout----------------1");
 		super.onLayout(changed, l, t, r, b);
+//		int with=r;
+//		int childCount = this.getChildCount();
+//		for(int i=0;i<childCount;i++){
+//			View childAt = this.getChildAt(i);
+//			if(childAt!=null){
+//			childAt.layout(l, t, r, b);
+//			}
+//			with+=r;
+//		}
 		if (changed) {
-			// 获取rightView所在布局的父布局
-			parentView = (ViewGroup) rightView.getParent();
+			 //获取rightView所在布局的父布局
+			parentView = (ViewGroup) this.rightView.getParent();
 			viewWidth = this.getWidth();  //左边listview的图片的宽度
 			leftlist_move_rate = leftlist_img_width / (viewWidth - leftlist_img_width);
 			Log.d("LogonActivity", "SildingLayout：onLayout: leftlist_move_rate" + leftlist_move_rate);
-
 		}
+		
 	}
 
 	/**
@@ -353,9 +363,9 @@ public class AnimationSildingLayout extends RelativeLayout {
 			View view = leftView.getChildAt(i);
 
 			if (view != null && view.getTag() != null) {
-//				CategoryLeftViewAdapter.ViewHolder holder = (CategoryLeftViewAdapter.ViewHolder) view.getTag();
-//				// holder.textView.setText(String.valueOf(parentViewScrollX));
-//				holder.description.setAlpha(Math.abs(parentView.getX()) / viewWidth);
+				CategoryLeftViewAdapter.ViewHolder holder = (CategoryLeftViewAdapter.ViewHolder) view.getTag();
+				// holder.textView.setText(String.valueOf(parentViewScrollX));
+				holder.description.setAlpha(Math.abs(parentView.getX()) / viewWidth);
 			}
 		}
 	}

@@ -3,7 +3,10 @@ package com.wuzeng.ui;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.PixelFormat;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -12,6 +15,7 @@ import android.view.WindowManager.LayoutParams;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class MDragGrid extends GridView {
 
@@ -20,6 +24,9 @@ public class MDragGrid extends GridView {
 	private float pre_downx;
 	private float pre_downy;
 	private Bitmap drawingCache;
+	private Drawable mDrawable;
+	private boolean isDran;
+	private ImageView iv;
 	
 	public MDragGrid(Context context) {
 		super(context);
@@ -43,7 +50,7 @@ public class MDragGrid extends GridView {
 		case MotionEvent.ACTION_DOWN:
 			pre_downx = ev.getX();
 			pre_downy = ev.getY();
-
+			setlistenerfor(ev);
 			break;
 
 		default:
@@ -55,18 +62,22 @@ public class MDragGrid extends GridView {
 	public void setlistenerfor(final MotionEvent ev) {
 		setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 
-			
-
 			@Override
 			public boolean onItemLongClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				// TODO Auto-generated method stub
 				float x2 = ev.getX();
 				float y2 = ev.getY();
-
-				if (view instanceof ImageView) {
-					 drawingCache = view.getDrawingCache();
-					getWindowManage(x2, y2, drawingCache);
+				Log.i("tag", "111111111111111111");
+				
+				if (view instanceof LinearLayout) {
+					ImageView childAt = (ImageView)((LinearLayout) view).getChildAt(0);
+					 mDrawable = childAt.getDrawable();
+					Bitmap drawingCache2 = childAt.getDrawingCache();
+					
+//					drawingCache = ((LinearLayout) view).getChildAt(position).getDrawingCache();
+					 
+					getWindowManage(x2, y2, mDrawable);
 
 				}
 				return false;
@@ -74,16 +85,18 @@ public class MDragGrid extends GridView {
 		});
 	}
 
-	public void getWindowManage(float x, float y, Bitmap bitmap) {
+	public void getWindowManage(float x, float y, Drawable bitmap) {
 		manager = (WindowManager) getContext().getSystemService(
 				Context.WINDOW_SERVICE);
 		layoutParams = new WindowManager.LayoutParams();
 		layoutParams.gravity = Gravity.TOP | Gravity.LEFT;
-		layoutParams.width = bitmap.getWidth();
-		layoutParams.height = bitmap.getHeight();
+		Rect bounds = bitmap.getBounds();
+		
+		layoutParams.width = Math.abs(bounds.width());
+		layoutParams.height = Math.abs(bounds.height());
 		layoutParams.x = (int) x;
 		layoutParams.y = (int) y;
-		ImageView iv = new ImageView(getContext());
+		 iv = new ImageView(getContext());
 
 		this.layoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
 				| WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE
@@ -92,7 +105,8 @@ public class MDragGrid extends GridView {
 		this.layoutParams.format = PixelFormat.TRANSLUCENT;
 		this.layoutParams.windowAnimations = 0;
 
-		iv.setImageBitmap(bitmap);
+		iv.setImageDrawable(bitmap);
+		isDran=true;
 		manager.addView(iv, layoutParams);
 	}
 
@@ -110,11 +124,13 @@ public class MDragGrid extends GridView {
 			float cur_y = ev.getY();
 			
 			float distancex=cur_x-pre_downx;
+			if(isDran){
 			onDrag( cur_x, cur_y);
+			}
 			break;
 
 		case MotionEvent.ACTION_UP:
-
+			isDran=false;
 			break;
 
 		default:
@@ -125,7 +141,7 @@ public class MDragGrid extends GridView {
 	
 	/** 在拖动的情况 */
 	private void onDrag( float rawx , float rawy) {
-		if(drawingCache!=null){
+		if(mDrawable!=null&&iv!=null){
 		layoutParams.alpha = 0.6f;
 //			windowParams.x = x - win_view_x + viewX;
 //			windowParams.y = y +  win_view_y + viewY;
@@ -133,9 +149,9 @@ public class MDragGrid extends GridView {
 //			windowParams.y = rawy - itemHeight / 2;
 		layoutParams.x = (int) rawx ;
 		layoutParams.y = (int) rawy ;
-		ImageView i=new ImageView(getContext());
-		i.setImageBitmap(drawingCache);
-		manager.updateViewLayout(i, layoutParams);
+//		ImageView i=new ImageView(getContext());
+//		i.setImageDrawable(mDrawable);
+		manager.updateViewLayout(iv, layoutParams);
 		}
 	}
 

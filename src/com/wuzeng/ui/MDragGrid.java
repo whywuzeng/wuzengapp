@@ -19,7 +19,8 @@ public class MDragGrid extends GridView {
 	private WindowManager.LayoutParams layoutParams;
 	private float pre_downx;
 	private float pre_downy;
-
+	private Bitmap drawingCache;
+	
 	public MDragGrid(Context context) {
 		super(context);
 		// TODO Auto-generated constructor stub
@@ -54,6 +55,8 @@ public class MDragGrid extends GridView {
 	public void setlistenerfor(final MotionEvent ev) {
 		setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 
+			
+
 			@Override
 			public boolean onItemLongClick(AdapterView<?> parent, View view,
 					int position, long id) {
@@ -62,7 +65,7 @@ public class MDragGrid extends GridView {
 				float y2 = ev.getY();
 
 				if (view instanceof ImageView) {
-					Bitmap drawingCache = view.getDrawingCache();
+					 drawingCache = view.getDrawingCache();
 					getWindowManage(x2, y2, drawingCache);
 
 				}
@@ -107,7 +110,7 @@ public class MDragGrid extends GridView {
 			float cur_y = ev.getY();
 			
 			float distancex=cur_x-pre_downx;
-
+			onDrag( cur_x, cur_y);
 			break;
 
 		case MotionEvent.ACTION_UP:
@@ -118,6 +121,22 @@ public class MDragGrid extends GridView {
 			break;
 		}
 		return super.onTouchEvent(ev);
+	}
+	
+	/** 在拖动的情况 */
+	private void onDrag( float rawx , float rawy) {
+		if(drawingCache!=null){
+		layoutParams.alpha = 0.6f;
+//			windowParams.x = x - win_view_x + viewX;
+//			windowParams.y = y +  win_view_y + viewY;
+//			windowParams.x = rawx - itemWidth / 2;
+//			windowParams.y = rawy - itemHeight / 2;
+		layoutParams.x = (int) rawx ;
+		layoutParams.y = (int) rawy ;
+		ImageView i=new ImageView(getContext());
+		i.setImageBitmap(drawingCache);
+		manager.updateViewLayout(i, layoutParams);
+		}
 	}
 
 }
